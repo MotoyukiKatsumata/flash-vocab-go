@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import { Providers } from "./providers"; // Jotaiプロバイダ
 
 const inter = Inter({ subsets: ["latin"] });
@@ -16,9 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className="dark"> {/* ダークモードをデフォルトに */}
+    <html lang="ja" className="dark">
+      {" "}
+      {/* ダークモードをデフォルトに */}
       <body className={inter.className}>
-        <Providers> {/* JotaiのProviderでラップ */}
+        <Providers>
+          {" "}
+          {/* JotaiのProviderでラップ */}
           <div className="min-h-screen bg-gray-900 text-gray-100">
             {children}
           </div>
