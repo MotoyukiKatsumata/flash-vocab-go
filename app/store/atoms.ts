@@ -1,4 +1,4 @@
-import { atom } from 'jotai';
+import { atom } from "jotai";
 
 // 単語ペアの型定義
 export type WordPair = {
@@ -13,7 +13,7 @@ export const csvFileAtom = atom<string | null>(null);
 export const allWordPairsAtom = atom<WordPair[]>([]);
 
 // 出題モード ('en-jp' | 'jp-en')
-export const quizModeAtom = atom<'en-jp' | 'jp-en' | null>(null);
+export const quizModeAtom = atom<"en-jp" | "jp-en" | null>(null);
 
 // 現在のラウンドで出題する単語ペアのリスト
 export const currentQuizSetAtom = atom<WordPair[]>([]);

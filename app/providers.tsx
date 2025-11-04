@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { Provider } from 'jotai';
+import { Provider } from "jotai";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   // Providerをクライアントコンポーネントとしてラップ

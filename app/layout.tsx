@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
-import { Providers } from "./providers"; // Jotaiプロバイダ
+import { Providers } from "./providers"; // 修正: パスを components/Providers に変更
 
 const inter = Inter({ subsets: ["latin"] });
 
